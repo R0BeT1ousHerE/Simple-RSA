@@ -54,7 +54,6 @@ def decrypt(encrypted_message, private_key):
 def main():
     print("Generating RSA keys...")
     public_key, private_key = generate_rsa_keys()
-    flag{tAsk_W1th_G1tHu6_Acc0un1_SuccEssfU11y_C0mP1eTed}
     print(f"Public Key: {public_key}")
     decrypted_message = ''.join([chr(pow(char, d, n)) for char in encrypted_message])
     encrypted_message = [pow(ord(char), e, n) for char in message]
